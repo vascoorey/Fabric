@@ -12,11 +12,13 @@ Pod::Spec.new do |spec|
 
   spec.subspec "Core" do |core|
     core.vendored_frameworks = "Fabric.framework"
+    core.public_header_files = "Fabric.framework/Versions/A/Headers/*.h"
   end
 
   spec.subspec "Crashlytics" do |crashlytics|
     crashlytics.dependency "Fabric/Core"
     crashlytics.vendored_frameworks = "Crashlytics.framework"
+    crashlytics.public_header_files = "Crashlytics.framework/Versions/A/Headers/*.h"
   end
 
   spec.subspec "MoPub" do |mopub|
