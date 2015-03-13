@@ -16,19 +16,16 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec "Crashlytics" do |crashlytics|
-    crashlytics.dependency "Fabric/Core"
     crashlytics.vendored_frameworks = "Crashlytics.framework"
     crashlytics.public_header_files = "Crashlytics.framework/Versions/A/Headers/*.h"
   end
 
   spec.subspec "MoPub" do |mopub|
-    mopub.dependency "Fabric/Core"
     mopub.vendored_frameworks = "MoPub.framework"
     mopub.resource_bundles = { "MoPub" => "MoPub.framework/Resources/MoPub.bundle/*" }
   end
 
   spec.subspec "Twitter" do |twitter|
-    twitter.dependency "Fabric/Core"
     twitter.vendored_frameworks = "TwitterKit.framework"
     twitter.resource_bundles = { "TwitterKitResources" => "TwitterKit.framework/Resources/TwitterKitResources.bundle/*" }
   end
