@@ -9,9 +9,9 @@ This repository contains CocoaPod for Fabric (https://fabric.io).
 * MoPub.framework v3.3.0
 
 ## Installing
-1. Use official Fabric app to configure the components you need
-2. Remove all frameworks from project which were added by Fabric app
-3. Add pods
+1. Use Fabric Mac app to configure the components you need (required for this pod to work).
+2. Remove all frameworks from project which were added by Fabric app.
+3. Add pods to Podfile
 
   ```ruby
 pod 'Fabric', '~> 1.2' # required
@@ -20,7 +20,9 @@ pod 'Fabric/MoPub', '~> 1.2'
 pod 'Fabric/Twitter', '~> 1.2'
 ```
 
-4. Change path in Run Script Build command to:
+  Then run `pod install`.
+
+4. Change the path in Run Script Build command to:
 
   `./Pods/Fabric/Fabric.framework/run <your organization API key> <your organization build secret>`
 
