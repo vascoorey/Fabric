@@ -1,7 +1,7 @@
 //
 //  TWTRAPIClient.h
 //
-//  Copyright (c) 2014 Twitter. All rights reserved.
+//  Copyright (c) 2015 Twitter. All rights reserved.
 //
 
 FOUNDATION_EXPORT NSString * const TWTRTweetsNotLoadedKey;
@@ -82,7 +82,7 @@ typedef void (^TWTRNetworkCompletion)(NSURLResponse *response, NSData *data, NSE
 /**
  *  Sends a Twitter request.
  *
- *  @param request    The Twitter user ID of the desired user.
+ *  @param request    The request that will be sent asynchronously.
  *  @param completion Completion block to be called on response. Called on main queue.
  */
 - (void)sendTwitterRequest:(NSURLRequest *)request completion:(TWTRNetworkCompletion)completion;
